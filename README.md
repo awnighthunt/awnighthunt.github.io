@@ -53,6 +53,7 @@ awnighthunt-blog/
 ## 三、以后日常写文章
 
 1. 新建一篇：在 `content/posts/` 里新建一个 `.md` 文件（可复制现有文章当模板）。
+
 2. 文件开头写：
    ```
    ---
@@ -61,9 +62,15 @@ awnighthunt-blog/
    tags: ["标签1", "标签2"]     # 想打几个就打几个
    ---
    ```
+   
 3. 正文用 Markdown 写。
+
 4. 想本地预览：命令行运行 `hugo server`，浏览器打开 http://localhost:1313
+
 5. 发布：把改动推送上去即可：
+   
+6. 如果线上的改过内容，先把它们git pull --no-edit，然后再去合并内容。
+
    ```
    git add .
    git commit -m "新文章"
