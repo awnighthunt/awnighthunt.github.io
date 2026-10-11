@@ -1,10 +1,13 @@
 ---
-title: "好物笔记：长期耐用好物清单"
+title: 好物笔记：长期耐用好物清单
 date: 2026-10-11
-draft: false
-tags: ["好物", "清单"]
-categories: ["日常"]
-summary: "记录那些用很久不坏、值得回购的东西。"
+draft: true
+tags:
+  - 好物
+  - 清单
+categories:
+  - 日常
+summary: 记录那些用很久不坏、值得回购的东西。
 ---
 
 随手记一些用了很久还好好的东西，方便以后回购时翻到。
