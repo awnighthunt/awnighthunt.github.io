@@ -1,0 +1,75 @@
+baseURL = "https://awnighthunt.github.io/"
+languageCode = "zh-cn"
+title = "awnighthunt 的博客"
+theme = "PaperMod"
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+# 每页文章数
+[pagination]
+  pagerSize = 10
+
+# 首页额外输出 JSON，供站内搜索使用
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 标签 + 分类（多标签靠这里，文章 front matter 里写 tags 即可）
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+  env = "production"
+  title = "awnighthunt 的博客"
+  description = "记录碎片化思考、阅读笔记与日常好物"
+  author = "awnighthunt"
+  # 明暗主题：auto=跟随系统 / light=亮 / dark=暗
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowToc = true
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  # 站内搜索（Fuse.js，纯前端，免费）——满足“检索历史内容”
+  enableSearch = true
+  showPostTags = true
+
+# 首页欢迎信息
+[params.homeInfoParams]
+  Title = "你好，我是 awnighthunt"
+  Content = "这里记录我的碎片化思考、阅读笔记与日常好物。用右上角/导航的搜索框，可以检索到历史写过的所有内容。"
+
+# 搜索匹配参数
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+
+# 顶部导航
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 4
